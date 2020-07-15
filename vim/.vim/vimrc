@@ -1,0 +1,43 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"Plugins
+Plugin 'morhetz/gruvbox'
+Plugin 'scrooloose/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+colorscheme gruvbox
+
+let g:gruvbox_contrast_dark = "hard"
+let NERDTreeQuitOnOpen=1
+let mapleader=" "
+
+
+" Non-plugin stuff
+
+syntax enable
+set number
+set bg=dark
+set clipboard=unamed
+set sw=2
+set encoding=utf-8
+set laststatus=2
+set mouse=a
+set numberwidth=1
+set showcmd
+set ruler
+
+"Keymaps
+nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>w :w<Cr>
