@@ -37,7 +37,10 @@ set mouse=a
 set numberwidth=1
 set showcmd
 set ruler
+set hlsearch "resaltar patrones de busqueda.
 
 "Keymaps
 nmap <Leader>nt :NERDTreeFind<CR>
-nmap <Leader>w :w<Cr>
+nmap <Leader>w :w<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>hl :set hlsearch! hlsearch?<CR>
