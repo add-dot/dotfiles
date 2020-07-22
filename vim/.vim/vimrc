@@ -30,7 +30,13 @@ syntax enable
 set number
 set bg=dark
 set clipboard=unamed
-set sw=2
+
+"space and tab configuration
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+
 set encoding=utf-8
 set laststatus=2
 set mouse=a
