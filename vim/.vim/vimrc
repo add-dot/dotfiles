@@ -1,6 +1,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"Leader Key 'space'
+let mapleader=" "
+
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,19 +16,28 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'SirVer/ultisnips'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
 colorscheme gruvbox
 
+"Ultisnips trigger and settings
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsListSnippets = "<c-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+let g:UltiSnipsEditSplit = "vertical"
+map <leader>e :UltiSnipsEdit<cr>
+
+"Theme
 let g:gruvbox_contrast_dark = "hard"
+
+"Nerdtree options
 let NERDTreeQuitOnOpen=1
-let mapleader=" "
 
-
-" Non-plugin stuff
+"Non-plugin stuff
 
 syntax enable
 set number
