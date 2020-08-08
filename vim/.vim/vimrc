@@ -18,10 +18,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'SirVer/ultisnips'
 Plugin 'lervag/vimtex'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-colorscheme gruvbox
 
 "Ultisnips trigger and settings
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -31,8 +31,22 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 let g:UltiSnipsEditSplit = "vertical"
 map <leader>e :UltiSnipsEdit<cr>
 
-"Theme
-let g:gruvbox_contrast_dark = "hard"
+
+"Lightline config 
+let g:lightline = {
+    \ 'colorscheme': 'PaperColor',
+    \ 'active': {
+    \    'left': [ [ 'mode', 'paste'],
+    \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
+    \ }
+
+"Vim theme
+let g:gruvbox_contrast_dark="hard" 
+colorscheme gruvbox
 
 "Nerdtree options
 let NERDTreeQuitOnOpen=1
@@ -45,21 +59,30 @@ inoremap <F2> <esc>:set spell!<cr>
 nnoremap <F2> :set spell!<cr>
 set spelllang=es,en_us
 
-"Non-plugin stuff
 
+
+"Non-plugin stuff
 syntax enable
 set number
 set bg=dark
 set clipboard=unamed
 
-"space and tab configuration
+"Space and tab configuration
 set expandtab
 set smarttab
 set shiftwidth=4
 set tabstop=4
 
+"Encode
 set encoding=utf-8
+
+" No show mode for insert..and so on
+set noshowmode
+
+"Satus line config
 set laststatus=2
+
+"Mouse enable on vim 
 set mouse=a
 set numberwidth=1
 set showcmd
