@@ -1,0 +1,32 @@
+##snippet
+
+snippet sel "select statement" 
+SELECT ${1:Parameter} FROM ${2:table};
+$0
+endsnippet
+
+snippet created "Create data base" 
+CREATE DATABASE ${1:dbname};
+$0
+endsnippet
+
+snippet creates "Create schema"
+CREATE SCHEMA ${1:schema name}
+$0
+endsnippet
+
+snippet createt "Create table" 
+CREATE TABLE ${1:table_name}(
+$2
+)
+$0
+endsnippet
+
+snippet altert "Alter table" 
+ALTER TABLE ${1:table_name} $0;
+endsnippet
+
+snippet inse "Insert into" 
+INSERT INTO ${1:table_name}(${2:parameter}) VALUES
+	($3)$0
+endsnippet
