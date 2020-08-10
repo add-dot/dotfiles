@@ -25,12 +25,12 @@ filetype plugin indent on    " required
 
 "Ultisnips trigger and settings
 let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsListSnippets = "<c-tab>"
+let g:UltiSnipsListSnippets = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 let g:UltiSnipsEditSplit = "vertical"
 map <leader>e :UltiSnipsEdit<cr>
-
+autocmd! User UltiSnipsEnterFirstSnippet
 
 "Lightline config 
 let g:lightline = {
