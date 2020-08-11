@@ -8,12 +8,22 @@ snippet #- "encoding utf-8" b
 $0
 endsnippet
 
-snippet fro	"From some import some" b
+snippet fr "From some import some" b
 from $1 import $2
-$3
+$0
 endsnippet
 
 snippet im "Import some" b
-import $0
+import $1
+$0
 endsnippet
 
+snippet [ "Insert brackets"
+[${1:something}]
+$0
+endsnippet
+
+snippet ( "Insert parenthesis" 
+($1)
+$0
+endsnippet

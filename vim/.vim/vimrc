@@ -25,9 +25,8 @@ filetype plugin indent on    " required
 
 "Ultisnips trigger and settings
 let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsListSnippets = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-j>"
 let g:UltiSnipsEditSplit = "vertical"
 map <leader>e :UltiSnipsEdit<cr>
 autocmd! User UltiSnipsEnterFirstSnippet
@@ -87,6 +86,9 @@ set mouse=a
 set numberwidth=1
 set showcmd
 set ruler
+
+set incsearch
+set showmatch
 set hlsearch "resaltar patrones de busqueda.
 
 "Keymaps
