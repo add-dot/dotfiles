@@ -27,3 +27,49 @@ snippet ( "Insert parenthesis"
 ($1)
 $0
 endsnippet
+
+#Snippets for class with numpydoc style
+snippet clas "Class snippet" b
+class ${1:Classname}:
+	"""${2:Description}
+
+	Parameters
+	----------
+	${3:Parameter} : ${4:type}
+		${5:Description}
+
+	Attributes
+	----------
+	${6:attribute} : ${7:type}
+		${8:Description}	
+
+	"""
+	def __init__(${9:self}):
+		$0
+endsnippet
+
+#Snippets for def with numpydoc style
+snippet de "def snippet" b
+def ${1:Function_name}(${2:Parameters}):
+	"""${3:Description}
+
+	Parameters
+	----------
+	${4:param1} : ${5:type}
+		${6:Description}
+
+	Returns
+	-------
+	${7:type}
+		${8:Description}
+		
+	"""
+	$0
+endsnippet
+
+
+
+
+
+
+
