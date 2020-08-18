@@ -20,6 +20,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'lervag/vimtex'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ap/vim-css-color'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -58,12 +59,16 @@ inoremap <F2> <esc>:set spell!<cr>
 nnoremap <F2> :set spell!<cr>
 set spelllang=es,en_us
 
-
-
 "Non-plugin stuff
 syntax enable
+
+"show line number
 set number
+
+"set background
 set bg=dark
+
+"clipboard for system
 set clipboard=unamed
 
 "Space and tab configuration
@@ -87,6 +92,8 @@ set ttimeoutlen=0
 
 "Mouse enable on vim 
 set mouse=a
+
+"width for line numbers
 set numberwidth=1
 set showcmd
 set ruler
@@ -95,8 +102,14 @@ set incsearch
 set showmatch
 set hlsearch "highlight search patterns.
 
+"Splits
+set splitbelow splitright
+
 "Keymaps
+"""""""""
+"Open Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
+"Hilight on/off
 nmap <Leader>hl :set hlsearch! hlsearch?<CR>
