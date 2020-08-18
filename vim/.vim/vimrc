@@ -89,7 +89,7 @@ set ruler
 
 set incsearch
 set showmatch
-set hlsearch "resaltar patrones de busqueda.
+set hlsearch "highlight search patterns.
 
 "Keymaps
 nmap <Leader>nt :NERDTreeFind<CR>
