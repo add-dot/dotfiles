@@ -81,6 +81,10 @@ set noshowmode
 "Satus line config
 set laststatus=2
 
+"Key code delays
+set timeoutlen=1000
+set ttimeoutlen=0
+
 "Mouse enable on vim 
 set mouse=a
 set numberwidth=1
