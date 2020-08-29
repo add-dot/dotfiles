@@ -26,8 +26,16 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 * Create the symbol links
 
 ```
-$ stow -t ~ vim alacritty
+$ stow -t ~ vim alacritty bash_aliases
 ``` 
+## Bashrc
+* to make `.bash_aliases` work need to add this to the `.bashrc`
+```
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+```
+
 ## Vimrc plugins
 
 * [morhetz/gruvbox](https://www.github.com/morhetz/gruvbox.git)
