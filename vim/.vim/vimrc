@@ -5,7 +5,7 @@ filetype off                  " required
 let mapleader=" "
 
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -21,6 +21,7 @@ Plugin 'lervag/vimtex'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ap/vim-css-color'
+Plugin 'iamcco/markdown-preview.nvim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -62,13 +63,13 @@ set spelllang=es,en_us
 "Non-plugin stuff
 syntax enable
 
-"show line number
+"Show line number
 set number
 
-"set background
+"Set background
 set bg=dark
 
-"clipboard for system
+"Clipboard for system
 set clipboard=unamed
 
 "Space and tab configuration
@@ -93,11 +94,12 @@ set ttimeoutlen=0
 "Mouse enable on vim 
 set mouse=a
 
-"width for line numbers
+"Width for line numbers
 set numberwidth=1
 set showcmd
 set ruler
 
+"Search settings
 set incsearch
 set showmatch
 set hlsearch "highlight search patterns.
@@ -109,6 +111,7 @@ set splitbelow splitright
 """""""""
 "Open Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
+"save and exit
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "Hilight on/off
