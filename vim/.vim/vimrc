@@ -116,3 +116,4 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "Hilight on/off
 nmap <Leader>hl :set hlsearch! hlsearch?<CR>
+nmap <Leader>md :MarkdownPreview<CR>
