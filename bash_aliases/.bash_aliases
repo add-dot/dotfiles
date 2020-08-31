@@ -5,6 +5,11 @@
 alias ll='ls -la'
 #Open rc file quickly
 alias vimrc='vim ~/.vim/vimrc'
+#Open tmux with new session name
+alias tmxn='tmux new -s'
+#Open a session of tmux
+alias tmxs='tmux attach -t'
+
 # function to create a directory and move into it.
 mkcd () {
     mkdir -pv $1
