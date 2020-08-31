@@ -16,6 +16,10 @@ $ sudo apt install stow
 ```
 $ sudo apt install alacritty
 ```
+* Install tmux
+```
+$ sudo apt install tmux
+```
 
 * Clone Vundle the plugin manager
 
@@ -26,7 +30,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 * Create the symbol links
 
 ```
-$ stow -t ~ vim alacritty bash_aliases
+$ stow -t ~ vim alacritty bash_aliases tmux readline
 ``` 
 ## Bashrc
 * to make `.bash_aliases` work need to add this to the `.bashrc`
@@ -62,3 +66,4 @@ fi
 
 * Plugin Manager: [VundleVim](https://github.com/VundleVim/Vundle.vim.git)
 * Terminal emulator: [Alacritty](https://github.com/alacritty/alacritty.git)
+* Tmux : [Tmux](https://github.com/tmux/tmux.git)
