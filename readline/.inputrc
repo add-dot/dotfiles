@@ -1,0 +1,4 @@
+#Use vim style editing istead of emacs
+set editing-mode vi
+#Keymaps while we're in insert mdoe
+set keymap vi-insert
