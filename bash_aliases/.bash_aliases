@@ -9,6 +9,8 @@ alias vimrc='vim ~/.vim/vimrc'
 alias tmxn='tmux new -s'
 #Open a session of tmux
 alias tmxs='tmux attach -t'
+#shortcut for aliase
+alias aliaserc='vim ~/.bash_aliases'
 
 # function to create a directory and move into it.
 mkcd () {
