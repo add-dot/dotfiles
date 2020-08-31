@@ -69,8 +69,8 @@ set number
 "Set background
 set bg=dark
 
-"Clipboard for system
-set clipboard=unamed
+"Clipboard for paste on other apps
+set clipboard=unnamedplus
 
 "Space and tab configuration
 set expandtab
@@ -103,6 +103,8 @@ set ruler
 set incsearch
 set showmatch
 set hlsearch "highlight search patterns.
+
+set magic
 
 "Splits
 set splitbelow splitright
