@@ -35,7 +35,7 @@ autocmd! User UltiSnipsEnterFirstSnippet
 
 "Lightline config 
 let g:lightline = {
-    \ 'colorscheme': 'Gruvbox',
+    \ 'colorscheme': 'gruvbox',
     \ 'active': {
     \    'left': [ [ 'mode', 'paste'],
     \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
