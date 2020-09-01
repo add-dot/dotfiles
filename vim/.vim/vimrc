@@ -35,15 +35,20 @@ autocmd! User UltiSnipsEnterFirstSnippet
 
 "Lightline config 
 let g:lightline = {
-    \ 'colorscheme': 'PaperColor',
+    \ 'colorscheme': 'Gruvbox',
     \ 'active': {
     \    'left': [ [ 'mode', 'paste'],
     \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
     \ },
     \ 'component_function': {
-    \   'gitbranch': 'FugitiveHead'
+    \   'gitbranch': 'FugitiveHead',
+    \   'readonly': 'LightlineReadonly',
     \ },
     \ }
+
+function! LightlineReadonly()
+    return &readonly && &filetype !=# 'help' ? 'RO' : ''
+endfunction
 
 "Vim theme
 let g:gruvbox_contrast_dark="hard" 
@@ -61,10 +66,7 @@ nnoremap <F2> :set spell!<cr>
 set spelllang=es,en_us
 
 "Non-plugin stuff
-syntax enable
-
-"Show line number
-set number
+syntax enable 
 
 "Set background
 set bg=dark
@@ -93,6 +95,9 @@ set ttimeoutlen=0
 
 "Mouse enable on vim 
 set mouse=a
+
+"Show line number
+set number
 
 "Width for line numbers
 set numberwidth=1
